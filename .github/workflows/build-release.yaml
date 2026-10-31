@@ -2,9 +2,11 @@ name: Build TizenTube Standalone and Release
 
 
 on:
+  workflow_dispatch:
   push:
     tags:
-      - 'v*.*.*'
+      - 'v*'
+      
 
 jobs:
   build:
